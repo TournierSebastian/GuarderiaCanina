@@ -7,40 +7,51 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #F2A65E;
+    align-items: center;
+    box-shadow: 2px 6px 20px rgb(0, 0, 0);  
+    z-index: 10; 
+}
+main{
+    flex: 1;
+    background-color: #FDF5E6;
+    display: flex;
+    align-items: center;     
+    flex-direction: column;  
+}
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        background-color: #F2A65E;
-        align-items: center;
-    }
-    main{
-        flex: 1;
-        background-color: #FDF5E6;
-    }
-    footer{
-        background-color: #F2A65E;
+footer{
+    background-color: #F2A65E;
 
-    }
 }
 nav a{
-    font-size: 2vw;     margin: 10px;
+    font-size: 1.5vw;     
+
     color: #4A322E !important;;
 }
 
 .logo{
     width: 10%;
     height: auto;
-    margin-left: 10px;
     padding: 0;
 }
 
 .PerroNavbar{
+    display: block;
     margin: 0;
     padding: 0;
     width: 12%;
     height: auto;
-    
 }
+
+
+.titulo{
+    color: #4A322E;
+}
+
