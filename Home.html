@@ -1,42 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./Home.css" rel="stylesheet"> 
+    <link href="./Home.css" rel="stylesheet">
+    <link rel="icon" href="./Imagenes/Logo.png" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+
+
     <title>Guarderia Patitas Felices</title>
 </head>
+
 <body>
-    <nav>
-        <img src="./Imagenes/Logo.png"class="logo" alt="Logo de la guardería">
-        <div class="d-flex">
-        <a class="mx-4">Inicio</a>
-        <a class="mx-4">Servicio</a>
+    <nav class="d-flex align-items-center">
+        <!-- Sección izquierda -->
+        <div class="d-flex align-items-center">
+            <img src="./Imagenes/Logo.png" class="logo mx-2" alt="Logo">
+            <div class="ms-3     d-flex">
+                <a href="#presentacion" class="nav-a">Inicio</a>
+                <a href="#servicios" class="nav-a">Servicios</a>
+            </div>
         </div>
-        <img src="./Imagenes/PerroNavbar.png" class="PerroNavbar" alt="imagen de perro">
-        <div  class="d-flex">
-        <a class="mx-2">Quienes somos</a>
-        <a class="mx-2">Nuestro espacio</a>
-        <a class="mx-2">Contacto</a>
+
+        <!-- Imagen central -->
+        <div class="d-flex justify-content-center mx-auto">
+            <img src="./Imagenes/PerroNavbar.png" class="PerroNavbar" alt="Decoración">
+        </div>
+
+        <!-- Sección derecha -->
+        <div class="d-flex align-items-center text-center">
+            <a href="#quienes-somos" class="nav-a">Quienes Somos</a>
+            <a href="#contacto" class="nav-a">Contacto</a>
         </div>
     </nav>
     <main>
-        
-        <h2 class="titulo my-5">Guarderia Canina Familiar Funes</h2>
 
-        <div class="presentacion col-11">
-            <h5> 🐾Presentacion</h5>
-                Somos una guardería canina familiar, apasionados por el cuidado de las mascotas y comprometidos con brindar un servicio de calidad, cariño y confianza. Aquí, tratamos a cada perro como un miembro más de nuestra familia, asegurándonos de que se sienta seguro, feliz y amado.
+        <h2 class="titulo my-5">Guardería Canina Familiar Funes</h2>
+        <section class="col-11">
+            <h5 id="presentacion">🐾 Presentación</h5>
+            <p>
+                Somos una guardería canina familiar, apasionados por el cuidado de las mascotas y comprometidos con
+                brindar un servicio de calidad, cariño y confianza. Aquí, tratamos a cada perro como un miembro más de
+                nuestra familia, asegurándonos de que se sienta seguro, feliz y amado.
             </p>
-        </div>
+        </section>
 
+        <section class="carrusel-container mt-5 py-3 text-center">
+            <div class="carousel-wrapper">
+                <button class="carousel-control prev">&lt;</button>
+                <div class="carousel-track">
+                    <img src="./Imagenes/Carusel/perros1.jpg" alt="Perro 1" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros2.jpg" alt="Perro 2" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros3.jpg" alt="Perro 3" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros4.jpg" alt="Perro 4" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros5.jpg" alt="Perro 5" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros6.jpg" alt="Perro 6" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros1.jpg" alt="Perro 7" class="carousel-image">
+                    <img src="./Imagenes/Carusel/perros2.jpg" alt="Perro 8" class="carousel-image">
+                </div>
+                <button class="carousel-control next">&gt;</button>
+            </div>
+            <div class="mt-3">
+                <a class="button-google" href="https://photos.app.goo.gl/D1xXB5fuv1p5wMDR7" target="_blank">Quiero ver mas</a>
+            </div>
+        </section>
+
+
+        <section class="col-11 mt-5">
+            <h5 id="servicios">🏠 Servicios</h5>
+            <p>
+                Somos una guardería canina familiar, apasionados por el cuidado de las mascotas y comprometidos con
+                brindar un servicio de calidad, cariño y confianza. Aquí, tratamos a cada perro como un miembro más de
+                nuestra familia, asegurándonos de que se sienta seguro, feliz y amado.
+            </p>
+        </section>
+
+
+        <section class="Antencion col-12 d-flex align-items-center">
+            <div>
+                <img src="./Imagenes/Perro.png" class="image-perro1" alt="Decoracion">
+            </div>
+            <div class="text-center Antencion-h3">
+                <h3><b>Atención</b> durante todo el año</h3>
+            </div>
+            <div>
+                <img src="./Imagenes/Perro1.png" class="image-perro2" alt="Decoracion">
+            </div>
+        </section>
 
     </main>
 
-    <footer> 
-        soy footer
+    <section class="col-11 mt-5">
+        <h5 id="quienes-somos">👨‍👩‍👧‍👦Quienes somos</h5>
+        <p>
+            Un equipo familiar apasionado por el cuidado de tus mascotas. Nos dedicamos a brindarles
+            un ambiente seguro y acogedor, como si fueran parte de nuestra familia. 🐾
+        </p>
+    </section>
+
+
+
+    <section class="col-11 my-5 ">
+        <h5 id="nuestro-espacio">🌳Nuestro Espacio</h5>
+        <div class="text-center">
+            <img src="./Imagenes/casa1.jpg" class="image-casa">
+            <img src="./Imagenes/casa2.jpg" class="image-casa">
+        </div>
+    </section>
+
+
+    <footer id="contacto">
+        <div class="">
+            <img src="./Imagenes/wsp.png" class="icon-footer-wsp">
+            <a href="https://wa.me/3416410519" target="_blank" rel="noopener noreferrer">
+                341 641-0519
+            </a>
+        </div>
+
+        <div class="">
+            <img src="./Imagenes/Instagram.png" class="icon-footer-instagram">
+            <a href="https://www.instagram.com/guarderia_canina_familiar/" target="_blank" rel="noopener noreferrer">
+                Guarderia_Canina_Familiar</a>
+        </div>
+
+        <div class="">
+            <img src="./Imagenes/facebook.png" class="icon-footer-facebook">
+            <a> Guarderia de perros</a>
+        </div>
     </footer>
+    <script src="./Home.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
+
 </html>
